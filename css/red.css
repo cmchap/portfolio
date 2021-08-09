@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css?family=Droid+Serif|Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900");
+
+* {
+  /* outline: 1px solid red; */
+}
+
+:root {
+  font-size: 18px;
+  font-family: 'Droid Serif', Serif;
+  --page-width: 900px;
+  --border-radius: 0.5rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.c-name-card__title {
+  font-family: 'Roboto', Sans-Serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  max-width: var(--page-width);
+  margin: 0 auto;
+}
+
+.c-main-nav {
+  display: flex;
+  height: 2rem;
+}
+
+.c-main-nav__list {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: auto;
+}
+
+.c-main-nav__link {
+  margin-right: 1rem;
+}
+
+.c-style-chooser {
+  display: flex;
+  align-items: center;
+}
+
+.c-style-chooser__label {
+  margin-right: 0.5rem;
+}
+
+.l-main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  margin: 1rem auto;
+  max-width: var(--page-width);
+}
+
+.l-name-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.l-name-card__text-container {
+  margin-top: 1rem;
+}
+
+.l-name-card__text-container * {
+  margin: 0;
+}
+
+.c-name-card {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  align-items: center;
+  width: 15rem;
+  padding: 1rem;
+  box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  border-radius: var(--border-radius);
+}
+
+.c-name-card__image {
+  content: url("../assets/profile-pic.jpg");
+  object-fit: cover;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 100rem;
+}
+
+.c-name-card__title {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.c-name-card__blurb {
+  margin-top: 1rem;
+  white-space: pre-line;
+}
+
+.c-name-card__button-container {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem auto;
+}
+
+.c-name-card__button-container * {
+  color: black;
+  text-decoration: none;
+}
+
+.c-name-card__button-container button:not(:first-child) {
+  margin-top: 1rem;
+}
+
+l-about-me {
+  background-color: red;
+}
+
+.c-about-me__heading {
+  text-align: center;
+}
+
+.c-about-me__body p {
+  display: inline-block;
+}
+
+.c-about-me code {
+  border: 1px solid #DAD9E3;
+  border-radius: 0.25em;
+  color: #BE0544;
+  background-color: #F5F5F8;
+  padding: 0.2em;
+  font-family: "Lucida Console", Monaco, monospace;
+  margin-left: 0.25em;
+}
+
+footer {
+  text-align: center;
+}
+
+footer .c-social-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  padding: 0;
+}
+
+footer .c-social-links__list-item {
+  font-size: 1.5rem;
+  text-decoration: none;
+  list-style-type: none;
+  margin: 0 1rem;
+}
+
+footer .c-social-links__list-item span {
+  display: none;
+}
